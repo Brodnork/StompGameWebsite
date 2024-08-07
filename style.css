@@ -286,8 +286,12 @@ hr.solid {
   }
 
   .emailBox{
-    width: 82%;
+    width: 100%;
+    height: 220px;
     border: none;
+    display: table;
+    zoom: 0.5;
+    text-align:center;
   }
   
 
