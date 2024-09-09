@@ -2,8 +2,8 @@
 	<html lang="en">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta property="og:image" content="" />
-	<meta property="og:title" content="News coming soon..." />
-	<meta property="og:site_name" content="News coming soon..." />
+	<meta property="og:title" content="Stomp and the Sword of Miracles" />
+	<meta property="og:site_name" content="Stomp and the Sword of Miracles" />
 	<meta property="og:type" content="website" />
 	<meta property="og:description" content="">
 <head>
@@ -15,7 +15,6 @@
 <body>
     <img class="logo" src="images/animatedLogo.webp"></a>
     <main>
-        <p class="center">A new game from Frogteam Games, creators of <a href="https://frogsonggame.com/" style="color:#ADD95C">FROGSONG</a>.</p>
         <p class="center">More info coming soon!</p>
     </main>
     <iframe src="https://stompgameemailform.carrd.co/#stompmail" class="emailBox"></iframe> 
