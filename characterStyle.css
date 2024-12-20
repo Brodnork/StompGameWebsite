@@ -1,0 +1,19 @@
+.character{
+  position: absolute;
+  cursor: pointer;
+  user-select: none;
+  -drag: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  
+}
+
+.bg{
+    position: absolute;
+    user-select: none;
+    -drag: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+  }
