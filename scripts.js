@@ -107,7 +107,7 @@ function castStomp() {
 
 function castThunderkin() {
     document.getElementById("castName").innerHTML = "Thunderkin";
-    document.getElementById("castBio").innerHTML = "A comic-loving kid who was given eletric superpowers by the Duskman in return for serving him. Claims to be evil, but doesn't seem to be doing a very good job at it.";
+    document.getElementById("castBio").innerHTML = "A comic-loving kid who was given electric superpowers by the Duskman in return for serving him. Claims to be evil, but doesn't seem to be doing a very good job at it.";
     document.getElementById("castFood").innerHTML = "Favourite food: &ensp; Mac and cheese";
     
 
