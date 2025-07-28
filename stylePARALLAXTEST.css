@@ -1,0 +1,1207 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Itim&display=swap');
+
+@property --animation-speed{
+  syntax: "<number>";
+  inherits: false;
+  initial-value: 0.2;
+}
+
+@media (min-width: 800px) {
+body {
+  padding:0;
+  padding-top:0.5em;
+  background-color: #0E0211; 
+  background-image: url("images/bgsparkle.png"), linear-gradient(#0B020F, #1C081E);
+  color: #FCEB9C;
+  font-family: 'Itim', sans-serif;
+	font-size: 1.7em;
+	background-attachment: fixed;
+  background-position: center;
+	line-height: 1.4;
+  margin-top: 0;
+  padding-bottom:0em;
+  margin-bottom: 0;
+}
+
+main {
+  
+  padding:0em;
+  padding-top:0.82em;
+  margin-right: 23%;
+  margin-left: 23%;
+  padding-bottom:1.2em;
+}
+
+.headerBar {
+  position: absolute;
+  width: 30%;
+  display: block;
+  text-align: right;
+  top: 5%;
+  right: 2%;
+  position: fixed;
+  
+}
+
+.headerLink {
+  padding-left: 3%;
+  margin-right: 3%;
+  font-variant: small-caps;
+}
+
+
+.trailer {
+  padding-top:0.82em;
+  padding-bottom:0.82em;
+  margin: auto;
+  width: 82%;
+  aspect-ratio: 16 / 9;
+}
+
+.steamLinkImage{
+  width: 400px;
+  transition: transform .2s; /* Animation */
+  background: url("wishlistOnSteam.png") no-repeat;
+  background-size: contain;
+  margin: auto;
+  
+}
+
+.steamLinkImage:hover{
+  transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  background: url("wishlistOnSteamHover.png") no-repeat;
+  background-size: contain;
+  margin: auto;
+}
+
+
+.steamLinkImageSticky{
+  width: 15%;
+  height: auto;
+  transition: transform .2s; /* Animation */
+  background: url("wishlistOnSteam.png") no-repeat;
+  background-size: contain;
+  position: fixed;
+  bottom: 2.8%;
+  left: 2%;
+  /*animation: glow 2s linear;
+  animation-iteration-count: infinite;*/
+
+}
+
+.steamLinkImageSticky:hover{
+  transform: scale(1.09); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  background: url("wishlistOnSteamHover.png") no-repeat;
+  background-size: contain;
+  position: fixed;
+  bottom: 2.8%;
+  left: 2%;
+}
+
+.center{
+  margin:auto;
+  text-align: center;
+}
+
+.newsletter{
+  margin-left: 32%;
+  margin-right: 32%;
+  text-align: center;
+  font-size: 0.86em;
+  margin-bottom: 1em;
+}
+
+.dusk {
+  color: #000000;
+}
+
+footer{
+  margin:auto;
+  margin-top: 0em;
+  padding-top:auto;
+  padding-bottom:0.82em;
+  font-size: 1.2em;
+  text-align: center;
+}
+.footer-text{
+  padding-left: 1em;
+  padding-right: 1em;
+  text-align: center;
+  color: #BA2A63;
+  padding-bottom: 2em;
+  margin: auto
+}
+
+.footerIcon{
+  padding-left:6%;
+  padding-right:6%;
+  padding-bottom: 0%;
+  font-size: 1.3em;
+}
+
+.sticky{
+  width: 10%;
+  display: block;
+  position: fixed;
+  text-align: right;
+  bottom: 5%;
+  right: 2%;
+}
+
+
+/* unvisited link */
+a:link {
+  color: #DB5C82;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: #DC5D83;
+	text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: #EC8386;
+	text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color: white;
+	text-decoration: none;
+}
+
+a img.hover {
+  display: none;
+  vertical-align: sub;
+}
+a img.default {
+  display: inherit;
+  vertical-align: sub;
+}
+a:hover img.hover {
+  display: inherit;
+  vertical-align: sub;
+}
+a:hover img.default {
+  display: none;
+  vertical-align: sub;
+}
+
+
+
+::-moz-selection { /* Code for Firefox */
+  color: #000000;
+  background: #FFE887;
+}
+
+::selection {
+  color: #000000;
+  background: #FFE887;
+}
+
+
+h1{
+  font-family: 'Itim', sans-serif;
+  font-size: 1.2em;
+  margin-top: 0;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+
+h2{
+  font-family: 'Itim', sans-serif;
+  font-size: 2em;
+  margin-top: 0;
+  text-align: center;
+  margin-bottom: 0;
+  font-variant: small-caps;
+}
+
+.castName{
+  font-family: 'Itim', sans-serif;
+  font-size: 1.5em;
+  margin-top: 0;
+  text-align: center;
+  margin-bottom: 0;
+  font-variant: small-caps;
+  font-weight: bold;
+}
+
+.castImg{
+  transition: 0.2s;
+  width: 20%;
+  animation-play-state: paused;
+}
+
+.castImg:hover {
+  cursor: pointer;
+  transform: scale(1.1,1.1) translate(0, -0.5em);
+}
+
+.castImgCurrent {
+  transition: 0.2s;
+  width: 20%;
+  cursor: pointer;
+  transform: scale(1.5,1.5) translate(0, -1em);
+}
+
+.castRow{
+  padding-top: 10%;
+  padding-bottom: 5%;
+}
+
+.castBio{
+  font-weight: normal;
+  margin: 0px auto;
+  margin-top: 0.4em;
+  text-align: center;
+  vertical-align: top;
+  top: 0;
+  height: 280px;
+
+}
+
+th{
+  font-weight: normal;
+  vertical-align: top;
+}
+
+.logo{
+  position: absolute; 
+  left: 0; 
+  right: 0; 
+  margin-inline: auto; 
+  width: 37%;
+  z-index: 10;
+
+}
+
+
+.toplinks{
+  margin:auto;
+  text-align: center;
+  position: relative;
+  z-index: 5;
+}
+
+.emailBox{
+  width: 1200px;
+  height: 200px;
+  display: block;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.characterBox{
+  width: 100%;
+  aspect-ratio: 10/6.3;
+  margin: auto;
+  /*margin-bottom: -61%;*/
+  margin-top: -2%;
+  border: none;
+  
+  -ms-zoom: 1;
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -webkit-transform: scale(1);
+}
+
+hr.solid {
+  border-top: 2px solid #EBB9A3;
+}
+
+
+
+.gallery{
+
+  display: flex; 
+  flex-direction: row-reverse; 
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.row{
+  margin-top: 2em;
+}
+
+.row > .column {
+  display:block;
+  margin: auto;
+}
+
+.row:after {
+  display:flex;
+  line-height: 0;
+  margin: auto;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  display:block;
+  width: 1%;
+  line-height: 0;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(12, 10, 24, 0.9);
+  margin: auto;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 55px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 32px;
+  margin-top: -50px;
+  color: #FCEB9C;
+  font-weight: bold;
+  font-size: 40px;
+  transition: 0s ease;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 10px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(41, 30, 54, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  color: #FCEB9C;
+}
+
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.2s;
+  height: 270px;
+  width: 480px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.hover-shadow:hover {
+  opacity: 0.78;
+  cursor: zoom-in;
+}
+
+.galleryDisplay{
+  max-height: 75vw;
+  max-width: 82vw;
+  margin: auto;
+  text-align: center;
+}
+
+.question{
+  font-size: 1.3em;
+  margin-top: 0.2em;
+  text-align: left;
+  margin-bottom: 0;
+  margin-bottom: 0.2em;
+  text-indent: -45px;
+  color: #EC8386;
+  padding-left: 45px;
+}
+
+.question::before{
+  content: "Q: ";
+  color: #BA2A63;
+}
+
+.answer{
+  font-size: 1em;
+  margin-top: 0;
+  text-align: left;
+  margin-bottom: 0;
+  margin-bottom: 1em;
+  text-indent: -43px;
+  padding-left: 45px;
+}
+
+.answer::before{
+  font-size: 1.3em;
+  content: "A: ";
+  color: #BA2A63;
+}
+
+
+span.email b {
+	display: none;
+}
+
+.center b{
+  color: #EC8386;
+  font-weight: bold;
+}
+
+
+.characterBox2{
+  width: 100%;
+  aspect-ratio: 10/6.34;
+  margin: auto;
+  margin-bottom: -16%;
+  margin-top: -2%;
+  background-image: url("images/characters/bgPaint.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.character{
+  position: absolute;
+  cursor: pointer;
+  user-select: none;
+  -drag: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+}
+
+.characterDusk{
+  position: absolute;
+  user-select: none;
+  -drag: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+}
+
+.characterDragon{
+  transition: 0.89s;
+
+  cursor: pointer;
+  user-select: none;
+  -drag: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  
+}
+
+.characterDragonFly{
+
+  cursor: pointer;
+  user-select: none;
+  -drag: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  transition: 0.89s;
+  transform: translate(-820px, -700px);
+}
+
+@keyframes glow {
+  0% {opacity: 100%;}
+  50% {opacity: 40%;}
+  100% {opacity: 100%;}
+}
+
+
+
+.backgroundpage {
+  perspective: 1px;
+  width: auto;
+  overflow-x: hidden;
+  position: absolute;
+  top: 0;
+  left: 78%;
+  right: 0;
+  bottom: 0;
+  margin-left: -1500px;
+}
+
+#parallax {
+  transform-style: preserve-3d;
+  height:120vh;
+}
+
+.keyart_layer {
+	background-position: bottom center;
+	background-size: cover;
+	background-repeat: repeat-x;
+	position: fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+}
+
+#keyart-0 {
+  background-image: url('images/BigBG/parallaxSky.png');
+  transform:translate3d(0px,0px,-13px) scale(16);
+}
+#keyart-1 {
+  background-image: url('images/BigBG/parallaxIslands.png');
+  transform:translate3d(900px,190px,-1.5px) scale(1.6);
+}
+#keyart-2 {
+  background-image: url('images/BigBG/parallaxThunderkin.png');
+  transform:translate3d(-100px,-200px,-.7px) scale(1);
+}
+#keyart-3 {
+  background-image: url('images/BigBG/parallaxDusk.png');
+  transform:translate3d(-250px,-90px,-.22px) scale(1);
+}
+#keyart-4 {
+  background-image: url('images/BigBG/parallaxRocks.png');
+  transform:translate3d(0px,-70px,0px) scale(1);
+}
+#keyart-5 {
+  background-image: url('images/BigBG/parallaxStomp.png');
+  transform:translate3d(28px,-82px,.3px) scale(0.55);
+  z-index: 11;
+  
+}
+
+.overflow {
+  position:absolute;
+  width:100vw;
+  height:fit-content%;
+  top:100vh;
+  background-color: #0E0211; 
+  background-image: url("images/bgsparkle.png"), linear-gradient(#0B020F, #1C081E);
+  background-attachment: fixed;
+  background-position: center;
+}
+
+
+
+
+
+}
+
+
+/*------------------------------------------------------------------------------------*/
+
+
+
+/* MOBILE CSS */
+@media (max-width: 1000px) {
+  body {
+    padding:0;
+    padding-top:0.5em;
+    background-color: #0E0211; 
+    background-image: url("images/bgsparkle.png"), linear-gradient(#0B020F, #1C081E);
+    color: #FCEB9C;
+    font-family: 'Itim', sans-serif;
+    font-size: 0.95em;
+    background-attachment: fixed;
+    background-position: center;
+    line-height: 1.4;
+    margin-top: 0;
+    padding-bottom:0em;
+    margin-bottom: 0;
+  }
+  
+  main {
+    padding:0em;
+    padding-top:0.82em;
+    margin-right: 8.2%;
+    margin-left: 8.2%;
+    padding-bottom:1.2em;
+  }
+  
+  .headerBar {
+    width: 80%;
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 1em;
+    margin-top: 0.5em;
+  }
+  
+  .headerLink {
+    padding-left: 5%;
+    margin-right: 5%;
+    font-variant: small-caps;
+    font-size: 1.2em;
+  }
+  
+  
+  .trailer {
+    padding-top:0.82em;
+    padding-bottom:0.82em;
+    margin: auto;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+  }
+  
+  .steamLinkImage{
+    width: 400px;
+    transition: transform .2s; /* Animation */
+    background: url("wishlistOnSteam.png") no-repeat;
+    background-size: contain;
+    margin: auto;
+  }
+  
+  .steamLinkImage:hover{
+    transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    background: url("wishlistOnSteamHover.png") no-repeat;
+    background-size: contain;
+    margin: auto;
+  }
+  
+  
+  .steamLinkImageSticky{
+    width: 45%;
+    height: auto;
+    transition: transform .2s; /* Animation */
+    background: url("wishlistOnSteam.png") no-repeat;
+    background-size: contain;
+  
+  }
+  
+  .steamLinkImageSticky:hover{
+    background: url("wishlistOnSteamHover.png") no-repeat;
+    background-size: contain;
+  }
+  
+  .center{
+    margin:auto;
+    text-align: center;
+  }
+  
+  .newsletter{
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  
+  .dusk {
+    color: #000000;
+  }
+  
+  footer{
+    margin:auto;
+    margin-top: 2em;
+    padding-top:auto;
+    padding-bottom:0.82em;
+    font-size: 1.2em;
+    text-align: center;
+  }
+  .footer-text{
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: center;
+    color: #BA2A63;
+    padding-bottom: 2em;
+    margin: auto
+  }
+  
+  .footerIcon{
+    padding-left:6%;
+    padding-right:6%;
+    padding-bottom: 0%;
+    font-size: 1.3em;
+  }
+  
+  .sticky{
+    width: 10%;
+    display: block;
+    position: fixed;
+    text-align: right;
+    bottom: 5%;
+    right: 1.5%;
+  }
+  
+  
+  /* unvisited link */
+  a:link {
+    color: #DB5C82;
+    text-decoration: none;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: #DC5D83;
+    text-decoration: none;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: #EC8386;
+    text-decoration: none;
+  }
+  
+  /* selected link */
+  a:active {
+    color: white;
+    text-decoration: none;
+  }
+  
+  a img.hover {
+    display: none;
+    vertical-align: sub;
+  }
+  a img.default {
+    display: inherit;
+    vertical-align: sub;
+  }
+  a:hover img.hover {
+    display: inherit;
+    vertical-align: sub;
+  }
+  a:hover img.default {
+    display: none;
+    vertical-align: sub;
+  }
+  
+  
+  
+  ::-moz-selection { /* Code for Firefox */
+    color: #000000;
+    background: #FFE887;
+  }
+  
+  ::selection {
+    color: #000000;
+    background: #FFE887;
+  }
+  
+  
+  h1{
+    font-family: 'Itim', sans-serif;
+    font-size: 1.2em;
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  
+  
+  h2{
+    font-family: 'Itim', sans-serif;
+    font-size: 2em;
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 0;
+    font-variant: small-caps;
+  }
+  
+  .castName{
+    font-family: 'Itim', sans-serif;
+    font-size: 1.5em;
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 0;
+    font-variant: small-caps;
+    font-weight: bold;
+  }
+  
+  .castImg{
+    transition: 0.2s;
+    width: 20%;
+    animation-play-state: paused;
+  }
+  
+  .castImg:hover {
+    cursor: pointer;
+    transform: scale(1.1,1.1) translate(0, -0.5em);
+  }
+  
+  .castImgCurrent {
+    transition: 0.2s;
+    width: 20%;
+    cursor: pointer;
+    transform: scale(1.5,1.5) translate(0, -1em);
+  }
+  
+  .castRow{
+    padding-top: 10%;
+    padding-bottom: 1%;
+  }
+  
+  .castBio{
+    font-weight: normal;
+    margin: 0px auto;
+    margin-top: 0.4em;
+    text-align: center;
+    vertical-align: top;
+    top: 0;
+    height: 200px;
+  
+  }
+  
+  th{
+    font-weight: normal;
+    vertical-align: top;
+  }
+  
+  .logo{
+    width: 280px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 10;
+    /*position: sticky;*/
+    top: 0;
+    transition: .35s;
+  }
+  
+  
+  .toplinks{
+    margin:auto;
+    text-align: center;
+    position: relative;
+    z-index: 5;
+  }
+  
+  .emailBox{
+    width: 1200px;
+    height: 200px;
+    display: block;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .characterBox{
+    width: 100%;
+    aspect-ratio: 10/6.3;
+    margin: auto;
+    /*margin-bottom: -61%;*/
+    margin-top: -2%;
+    border: none;
+    
+    -ms-zoom: 1;
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+  
+  hr.solid {
+    border-top: 2px solid #EBB9A3;
+  }
+  
+  
+  
+  .gallery{
+  
+    display: flex; 
+    flex-direction: row-reverse; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  
+  .row{
+    margin-top: 2em;
+  }
+  
+  .row > .column {
+    display:block;
+    margin: auto;
+    
+  }
+  
+  .row:after {
+    display:flex;
+    line-height: 0;
+    margin: auto;
+  }
+  
+  /* Create four equal columns that floats next to eachother */
+  .column {
+    display:block;
+    width: 1%;
+    line-height: 0;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(12, 10, 24, 0.9);
+    margin: auto;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 55px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #999999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Hide the slides by default */
+  .mySlides {
+    display: none;
+    margin: auto;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 32px;
+    margin-top: -50px;
+    color: #FCEB9C;
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0s ease;
+    border-radius: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 10px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(41, 30, 54, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Caption text */
+  .caption-container {
+    text-align: center;
+    color: #FCEB9C;
+  }
+  
+  
+  img.demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  
+  img.hover-shadow {
+    transition: 0.2s;
+    width: 45%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .hover-shadow:hover {
+    opacity: 0.78;
+    cursor: zoom-in;
+  }
+  
+  .galleryDisplay{
+    max-height: 75vw;
+    max-width: 82vw;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .question{
+    font-size: 1.3em;
+    margin-top: 0.2em;
+    text-align: left;
+    margin-bottom: 0;
+    margin-bottom: 0.2em;
+    text-indent: -25px;
+    color: #EC8386;
+    padding-left: 45px;
+  }
+  
+  .question::before{
+    content: "Q: ";
+    color: #BA2A63;
+  }
+  
+  .answer{
+    font-size: 1em;
+    margin-top: 0;
+    text-align: left;
+    margin-bottom: 0;
+    margin-bottom: 1em;
+    text-indent: -20px;
+    padding-left: 45px;
+  }
+  
+  .answer::before{
+    font-size: 1.3em;
+    content: "A: ";
+    color: #BA2A63;
+  }
+  
+  
+  span.email b {
+    display: none;
+  }
+  
+  .center b{
+    color: #EC8386;
+    font-weight: bold;
+  }
+  
+  
+  .characterBox2{
+    width: 100%;
+    aspect-ratio: 10/6.34;
+    margin: auto;
+    margin-bottom: -16%;
+    margin-top: -2%;
+    background-image: url("images/characters/bgPaint.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  
+  .character{
+    position: absolute;
+    cursor: pointer;
+    user-select: none;
+    -drag: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+  
+  }
+  
+  
+  .characterDusk{
+    position: absolute;
+    user-select: none;
+    -drag: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+  }
+  
+  .characterDragon{
+    transition: 0.89s;
+  
+    cursor: pointer;
+    user-select: none;
+    -drag: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    
+  }
+  
+  .characterDragonFly{
+  
+    cursor: pointer;
+    user-select: none;
+    -drag: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    transition: 0.89s;
+    transform: translate(-300px, -200px);
+  }
+
+
+
+}

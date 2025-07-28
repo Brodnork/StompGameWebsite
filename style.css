@@ -51,6 +51,7 @@ main {
 
 .trailer {
   padding-top:0.82em;
+  /* padding-top: 5em; */
   padding-bottom:0.82em;
   margin: auto;
   width: 82%;
@@ -571,6 +572,25 @@ span.email b {
   100% {opacity: 100%;}
 }
 
+
+.trailerHeader{
+  margin-top: -10%;
+  width: 100%;
+}
+
+.trailerContainer {
+  padding: 0;
+    overflow: hidden;
+    display: block;
+    height: 600px;
+    position: fixed;
+    z-index: -5;
+    left: -0.5%;
+    top: -1%;
+    opacity: 100%;
+    mask-image: linear-gradient(to bottom, transparent, black 20%, black 20%, transparent);
+    transition: .35s;
+}
 
 
 }
